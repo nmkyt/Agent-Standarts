@@ -1,0 +1,14 @@
+# <источник в центре> <назначение в сервисе>
+# Назначения только под .agent-rules/ и каталогами клиентов (.claude/, .kilo/, .cursor/).
+# Файлы клиентов доставляются только при deliver --agent <имя>.
+
+rules/workflow.md                    .agent-rules/workflow.md
+rules/commands/check.md              .agent-rules/commands/check.md
+rules/tools/core.py             .agent-rules/tools/core.py
+rules/tools/integrity.sh                .agent-rules/tools/integrity.sh
+rules/tools/contract.sh                .agent-rules/tools/contract.sh
+rules/tools/check.sh       .agent-rules/tools/check.sh
+
+clients/claude/commands/check.md        .claude/commands/check.md
+clients/kilo/command/check.md           .kilo/command/check.md
+clients/cursor/commands/check.md        .cursor/commands/check.md

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Ранняя обратная связь перед push. Включение: git config core.hooksPath .githooks
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+exec bash .agent-rules/tools/check.sh
